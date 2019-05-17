@@ -23,30 +23,7 @@ Do mesmo modo se segue as outras bibliotecas utilizadas:
     
 Exemplo (só lembrando que todas as palavras tags devem apresentar o símbolo cerquilha no início):
 -------------------------------------------------------------------------------------------------------------
-PLANETAS
-4
-0 7844000000 0 0 -26080 31080 0 1 7.34e22
-1 0 0 0 0 30000 0 16371000 5.97e26
-2 1.496e11 0 0 0 0 0 1 1.989e30
-3 -1.496e11 0 0 0 -25000 0 1 1.989e30
-
-CONTATO_DEM
-1
-1 1e17
-
-CONTATO_INTERACAO
-1 1 1 1
-1 1 1 1
-1 1 1 1
-1 1 1 1
-
-INTEGRADOR
-VERLET
-
-PARAMETROS_TEMPO
-50 4000000 200
-
-FIM
+ver o arquivo texto entrada.txt nos arquivos
 --------------------------------------------------------------------------------------------------------------------------------
 No início temos a tag #PLANETAS, onde a posição dessa linha será localizada e tomada como referência, portanto é importante que entre as tags definidas e os dados a serem colodados não haja uma quebra de linha, após a colocação dos dados (em seu final) até a próxima tag não há problema existir várias quebras de linha. É importante também que a referência do número de entrada de cada tag sejam de fato correspondentes aos dados digitados e que o espaçamento entre cada dado na mesma linha seja de um espaço. Nota-se ainda que a dimensão da matriz de contato da tag #CONTATO_INTERACAO deve ser quadrada e sua ordem do mesmo valor do número de planetas presentes. O arquivo de entrada deve está no mesmo diretório onde se encontra o arquivo do algoritmo do projeto final, para que possa ser identificado e lido, e o nome do arquivo a ser lido deve ser: 'entrada'. E sua extensão: '.txt'.
 
